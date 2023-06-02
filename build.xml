@@ -7,7 +7,7 @@
 	<property environment="env"/>
 
 	<property name="ivy.pom.version" value="${version}" />
-	<condition property="ivy.settings.file" value="${env.LOCAL_IVY_SETTINGS}"><isset property="env.LOCAL_IVY_SETTINGS"/></condition>
+	<condition property="ivy.settings.file" value="/home/maqy/ivysetting.xml"><isset property="env.LOCAL_IVY_SETTINGS"/></condition>
 	
 	<taskdef resource="org/apache/ivy/ant/antlib.xml" uri="antlib:org.apache.ivy.ant"/>
 
