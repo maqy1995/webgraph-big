@@ -15,8 +15,8 @@ import java.nio.ByteOrder;
 public class ConvertToAsciiGraph {
     public static void main(String[] args) throws IOException {
 //        ASCIIGraph graph = ASCIIGraph.loadOffline("/media/maqy/data/dataset/test/ascii_test");
-        ImmutableGraph graph = ArcListASCIIGraph.loadOffline("/media/maqy/data/dataset/enron-edgelist.txt");
-        DataOutputStream dos = new DataOutputStream(new FileOutputStream("/home/maqy/work/xh/zuckerli/testdata/enron_ascii"));
+        ImmutableGraph graph = ArcListASCIIGraph.loadOffline("/home/maqy/work/xh/py_demo/arxiv_zkr/edges.csv");
+        DataOutputStream dos = new DataOutputStream(new FileOutputStream("/home/maqy/work/xh/py_demo/arxiv_zkr/zkr_input"));
         ByteBuffer intBuffer = ByteBuffer.allocate(4);
         intBuffer.order(ByteOrder.LITTLE_ENDIAN);
         ByteBuffer longBuffer = ByteBuffer.allocate(8);

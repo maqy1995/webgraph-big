@@ -14,14 +14,14 @@ public class ReadGraphDemo {
             ProgressLogger progressLogger = new ProgressLogger();
 //            BVGraph bvGraph = BVGraph.load("/media/maqy/data/dataset/test/enron",2);
 //            ImmutableGraph graph = ArcListASCIIGraph.loadOffline("/media/maqy/data/dataset/test/ascii_enron.graph-txt", progressLogger);
-            ImmutableGraph graph = ArcListASCIIGraph.loadOffline("/media/maqy/data/dataset/enron-edgelist.txt");
+            ImmutableGraph graph = ArcListASCIIGraph.loadOffline("/home/maqy/work/xh/py_demo/arxiv_zkr/edges.csv");
 //            BVGraph.store(graph, "/media/maqy/data/dataset/test/enron");
 //            ImmutableGraph graph = ArcListASCIIGraph.loadOffline("/media/maqy/data/dataset/enron-edgelist.txt", progressLogger);
 //            Transform
             // System.out.println(graph.outdegree(1));
             System.out.println(graph.numNodes());
             List<Integer> targetNodes = new ArrayList<>();
-            targetNodes.add(0);
+            targetNodes.add(1);
             targetNodes.add(2);
             targetNodes.add(3);
             targetNodes.add(4);
